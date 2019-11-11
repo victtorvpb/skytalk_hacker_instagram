@@ -1,0 +1,6 @@
+-i https://pypi.org/simple
+-e git+https://git@github.com/ping/instagram_private_api.git@1d70e99bc11591161b0cd71cff3f0c08cd04b34f#egg=instagram-private-api
+django==2.2.6
+djangorestframework==3.10.3
+pytz==2019.3
+sqlparse==0.3.0
