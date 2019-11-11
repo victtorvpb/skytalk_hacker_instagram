@@ -1,0 +1,14 @@
+
+version: '3.5'
+
+services:
+  service_instagram:
+    container_name: service_instagram
+    image: service_instagram
+    build:
+      context: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - 80:8000
