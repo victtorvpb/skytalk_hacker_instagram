@@ -7,7 +7,6 @@ verify_ssl = true
 ipython = "*"
 
 [packages]
-instagram-private-api = {editable = true,git = "https://git@github.com/ping/instagram_private_api.git",ref = "1.6.0"}
 django = "==2.2.6"
 djangorestframework = "*"
 

@@ -1,6 +1,7 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from instagram_private_api import Client
+from django.conf import settings
 
 @api_view(['GET'])
 def its_alive(request):
@@ -9,8 +10,8 @@ def its_alive(request):
 @api_view(['GET'])
 def instagram_data(request):
     try:
-        username = 'marketingran'
-        password = 'a123b456c789z'
+        username = settings.USERNAME_INSTAGRAM
+        password = settings.PASSWORD_INSTAGRAM
         api = Client(username, password)
         
         username_param = request.query_params.get('username')

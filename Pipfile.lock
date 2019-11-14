@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "5c254b7604e7a87bde3d0cea3dbe0cbdb9469bd0f9819ee50b3e9b94e5bfaf35"
+            "sha256": "5db998e2375feec0b1f3092b650d1c1f8b3ccd33e9fb0dd512096f14cd88d68e"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -31,11 +31,6 @@
             ],
             "index": "pypi",
             "version": "==3.10.3"
-        },
-        "instagram-private-api": {
-            "editable": true,
-            "git": "https://git@github.com/ping/instagram_private_api.git",
-            "ref": "1d70e99bc11591161b0cd71cff3f0c08cd04b34f"
         },
         "pytz": {
             "hashes": [

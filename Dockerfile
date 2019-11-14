@@ -19,11 +19,7 @@ RUN find /code -name '*__pycache__' -delete
 ### upgrade pip
 RUN pip install -U pip
 
-### install pipenv
-RUN pip install pipenv
 
-### install requirements
-RUN pipenv lock -r  > requirements.txt
-RUN pipenv --rm
+# ### install requirements
 RUN pip install -r requirements.txt
-RUN rm -rf /code/src
+RUN pip install git+https://git@github.com/ping/instagram_private_api.git@1.6.0

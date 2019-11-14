@@ -11,7 +11,12 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 """
 
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
+
+USERNAME_INSTAGRAM = os.getenv('USERNAME_INSTAGRAM')
+PASSWORD_INSTAGRAM = os.getenv('PASSWORD_INSTAGRAM')
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
